@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog & My Project</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav>
+            <div class="left-side">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="list-active">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <a href="">Contact Me</a>
+            </div>
+        </nav>
+
+        <!-- Project -->
+        <!-- Form -->
+        <div class="project">
+            <div class="project-form">
+                <div class="form-container">
+                    <form>
+                        <h1>ADD MY PROJECT</h1>
+                        <div>
+                            <label for="input-project-title">Project Name</label>
+                            <input type="text" name="" id="input-project-title"
+                                />
+                        </div>
+                        <div class="date">
+                            <div class="date-left">
+                                <label for="input-project-start">Start Date</label>
+                                <input type="date" id="input-project-start">
+                            </div>
+                            <div class="date-right">
+                                <label for="input-project-end">End Date</label>
+                                <input type="date" id="input-project-end">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="input-project-description">Description</label>
+                            <textarea id="input-project-description"></textarea>
+                        </div>
+                        <div>
+                            <!-- Checkbox -->
+                        </div>
+                        <div>
+                            <label for="input-project-image">Upload Image</label>
+                            <div class="input-project-image-group">
+                                <label for="input-project-image">
+                                    <p>Choose</p>
+                                    <img src="assets/images/file.png" alt="">
+                                </label>
+                                <input type="file" id="input-project-image"
+                                    hidden />
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" onclick="addProject()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="project-list">
+                <h1>MY PROJECT</h1>
+                <div class="row" id="contents">
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/script.js"></script>
+    </body>
+</html>
